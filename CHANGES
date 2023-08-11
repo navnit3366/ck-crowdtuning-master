@@ -1,0 +1,130 @@
+* 2018.11.21 - [FGG] added automatic redirect of some APIs
+
+* 2018.11.03 * https://github.com/ctuning/ck-crowdtuning/pull/10
+
+* 2018.07.14 * added platform.npu link
+
+* 2018.01.11 * ReQuEST competition slide
+
+* 2017.09.19 * minor output improvement
+
+* 2017.09.09 * optimized visualization of DNN mobile crowd-tuning results
+
+* 2017.08.29 * added reduce_bug option to localize bugs during compiler fuzzing (reducing complexity)
+
+* 2017.08.26 * fixing compiler fuzzing bug with a flag
+
+* 2017.08.13 * added --shared_solution_cid to reuse shared solutions in program pipelines
+
+* 2017.07.09 * added --base_flags to explore base optimization flags
+
+* 2017.07.03 * added customize_solution_conditions
+
+* 2017.05.25 * added CLBlast crowd-tuning
+
+* 2017.05.22 * added OpenMP/OpenBLAS thread exploration
+
+* 2017.05.18 * unified customized autotuning
+             * added DNN batch size autotuning scenario
+
+* 2017.04.18 * fixed LLVM/GCC crowd-tuning when there is extension in gcc/clang name, i.e. gcc-6 ...
+
+* 2017.03.09 * added used model topology to table of crowd-results (preparing collaborative
+               optimization of model topology and parameters)
+
+* 2017.01.15 * added accuracy of models and costs of various hardware as features 
+               (see our CPC'15 paper on performance and cost-aware computer engineering
+                https://arxiv.org/abs/1506.06256)
+             * added min/max power consumption for devices (for DNN crowd-tuning)
+
+* 2016.12.21 * highlighting all results from a given user
+
+* 2016.12.16 * added support to get fine grain stats for DNN libraries during crowd-tuning via mobile devices
+
+* 2016.11.12 * returning total_file_size for mobile crowd-tuning scenarios
+
+* 2016.11.07 * added experiment.bench.dnn.mobile to collaboratively benchmark 
+               various DNN implementations (Caffe, TensorFlow, etc)
+
+* 2016.11.06 * improving mobile crowd-tuning scenarios 
+
+* 2016.11.04 * making os.getcwd() safer
+
+* 2016.11.02 * improving module to crowdsource video experiments (Caffe)
+
+* 2016.10.24 * added 'ck dashboard program.optimization'
+
+* 2016.10.17 * added 'experiment.scenario.mobile' module to get crowd-benchmarking 
+               and crowd-tuning scenarios for mobile devices
+
+* 2016.10.13 * added support for external HTML rendering during crowd-tuning
+
+* 2016.10.12 * a few minor fixes/improvements (support for ARM WA)
+
+* 2016.09.26 * changing 'device' to 'machine'
+
+* 2016.09.23 * major update to support --target ('device' module)
+
+* 2016.09.05 * changed soft functions 'detect' to 'internal_detect' and 'check' to 'detect'
+
+* 2016.07.09 * added UID to specify user, if no user-specified ID or email (to distinguish experiments)
+
+* 2016.06.11 * added support to skip collection of GPU info and force platform scripts
+
+* 2016.05.30 * support for new CK web server
+
+* 2016.03.30 * major update of crowdtuning engine - now using queues!
+               Required for Android crowd-tuning app v2.0+!
+
+
+* 2016.03.29 * adding scenario to user timeline
+
+* 2016.03.16 * adding support for ARM64-based Android mobile devices
+
+* 2016.03.09 * adding beta support for Intel-based Android (x86 and x86_64)
+
+* 2016.03.08 * adding user statistics logging
+
+* 2016.03.07 * adding extra data set tags to select small data sets during collaborative optimization using mobile devices
+
+* 2016.02.22 * major crowdtuning update (cleaned up classification of species) and eviction of old results
+
+* 2016.02.18 * first version of the online classification of the workloads vs distinct optimizations
+               aka online learning or active learning (see our CPC'15 paper)
+
+* 2016.02.17 * adding dimension reduction to pipeline 
+               (leaving only influential optimizations + inverting and turning off all if needed)
+               very important for proper collaborative machine learning
+             * changed platform.accelerator -> platform.gpu
+
+* 2016.02.13 * adding flags: llvm,gcc,opencl,bugs to search specific crowdsourcing scenarios
+             * starting pruning of solutions (flags, etc)
+
+* 2016.02.12 * adding replay function (still need to add final check/classification of a computational species)
+             * added graph of reactions to optimizations
+
+* 2016.02.10 * adding support to crowdtuning arch specific flags 
+               (for example, ARM specific flags in GCC and LLVM
+                when collaboratively optimizing Android mobile devices)
+
+* 2016.02.09 * adding first LLVM crowdtuning strategies
+
+* 2016.02.05 * various small fixes and enhancements for experiment replay
+
+* 2016.02.04 * adding dependency on repo 'ck-crowdtuning-platforms' 
+               to share CPU/GPU/OS/platform feature for collaborative machine learning
+             * adding graph of speedups during crowdtuning
+
+* 2016.02.03 * adding ck.type_long for Python2/3 compatibility
+
+* 2016.02.02 * Major engine update with various GCC autotuning scenarios. 
+               New crowd-tuning including LLVM/OpenCL is on the way...
+
+* 2016.01.15 * GCC crowd-tuning (up to speed up with margins)
+             * Adding repo dependency on ck-web (to visualize results)
+
+* 2016.01.04 * adding submit function from mobile device during crowd-tuning
+
+* 2016.01.02 * adding test function to check CK server from remote (for example from mobile phones when crowdsourcing SW/HW optimization)
+
+* 2015.12.18 * adding dummy modules for compiler flag crowdtuning/pruning and crowdsourcing OpenCL algorithm tuning
